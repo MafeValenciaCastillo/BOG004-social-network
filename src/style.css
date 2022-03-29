@@ -155,8 +155,8 @@ hr {
     text-align: center;
     color:fff;
 }
-.btn-submit{
-    color: fff;
+.btn-submit, #btnLogin{
+    color: #ffff;
     background-color: #FFA8BE;
     margin:12px;
     border-radius: 10px;
@@ -308,8 +308,14 @@ input:focus {
   }
   .googleLogo {
     margin: 20px;
-  }
+  } 
   #nibblesLogo {
     width: 40%;
+  }
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
