@@ -1,15 +1,24 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
 header{
   display: none;
 }
 .liDelete {
   display: none;
 }
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 /*MENU*/
 #menuHtml {
   display: block;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
   background-color: #f6e1e8;
   text-align: center;
 }
@@ -38,7 +47,6 @@ li {
   color: white;
   font-weight: 550;
 }
-
 footer {
   background-color: #f6e1e8;
   height: 60px;
@@ -46,7 +54,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: rgb(141, 137, 137);
 }
@@ -56,7 +63,6 @@ body {
   padding: 0px;
   height: 100%;
 }
-
 .leftColumn {
   display: flex;
   justify-content: center;
@@ -86,7 +92,6 @@ body {
   margin: 0px;
 }
 .leftColumn p {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: rgb(141, 137, 137);
   text-align: center;
@@ -95,25 +100,7 @@ body {
 #homeImg {
   width: 550px;
 }
-#loginBtn,
-#createUserBtn {
-  width: 200px;
-  border: none;
-  border-radius: 20px;
-  margin: 10px;
-  padding: 6px 20px 6px 20px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-#loginBtn {
-  background-color: #ffa8be;
-  color: white;
-}
-#createUserBtn {
-  background-color: #a6cf98;
-  color: white;
-}
+
 #nibblesLogo {
   display: block;
   width: 30%;
@@ -121,7 +108,6 @@ body {
 }
 /*columna derecha*/
 .rightColumn p{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     color: rgb(112, 110, 110);
@@ -138,77 +124,62 @@ hr {
 .googleLogo {
   width: 40px;
 }
-#register-form{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-.formulario{
-    background-color: #A6CF98;
-    color: white;
-     margin:12px;
-     border-radius: 10px;
-     border:none;
-     padding: 8px;
-}
 .text-center{
     text-align: center;
     color:fff;
 }
+
+/*BOTONES*/
+#loginBtn,
+#createUserBtn {
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 6px 20px 6px 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#loginBtn {
+  background-color: #ffa8be;
+  color: white;
+}
+#createUserBtn {
+  background-color: #a6cf98;
+  color: white;
+}
 .btn-submit, #btnLogin{
-    color: #ffff;
-    background-color: #FFA8BE;
-    margin:12px;
-    border-radius: 10px;
-    border:none;
-    padding: 8px;
+  color: #ffff;
+  background-color: #FFA8BE;
+  margin: 12px;
+  border-radius: 15px;
+  border:none;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
 }
-
-
-/*REGISTER*/
-#register-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.with-error {
-  border: 1px solid rgb(238, 58, 58);
-  color:#000;
-  
-}
-
-.error-message-hidden {
-  display: none;
-}
-
 /*LOGIN*/
 .formLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
 }
 .formLogin :focus-visible {
   border: none;
 }
-
 #btnLogin {
   background-color: #ffa8be;
   color: white;
 }
-
 #loginEmail {
   background-color: #a6cf98;
   color: white;
 }
-
 #loginPassword {
   background-color: #a6cf98;
   color: white;
 }
-
 #loginEmail,
 #loginPassword {
   width: 200px;
@@ -216,33 +187,56 @@ hr {
   border-radius: 20px;
   margin: 10px;
   padding: 6px 20px 6px 20px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
- 
 }
-
 h2 {
   font-family: 'Amatic SC', cursive;
   color: #ffa8be;
   font-size: 50px;
   padding: 0px;
   text-align: center;
+  margin-top: 100px;
 }
-
 input:focus {
   outline: none;
+}
+/*REGISTER*/
+#register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.with-error {
+  border: 1px solid rgb(238, 58, 58);
+  color:#000;
+}
+.error-message-hidden {
+  display: none;
+}
+#register-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.formulario{
+  background-color: #A6CF98;
+  color: white;
+  margin:12px;
+  border-radius: 20px;
+  border: none;
+  padding: 8px;
+  width: 200px;
+}
+#error-message-email, #error-message-password{
+  margin: 0px;
+  font-size: 12px;
 }
 
 /* Escritorio extra grande */
 @media only screen and (min-width: 992px) {
-  /* body{
-        background-image: url(./img/background-home.png);
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
-    } */
     #menuHtml {
       padding: 20px 0px 20px 0px;
+        height: 87vh;
     }
     #sectionGrid {
       display: grid;
@@ -272,6 +266,7 @@ input:focus {
   .leftColumn {
     display: none;
   }
+  
 }
 /* TELÉFONOS */
 @media only screen and (max-width: 575px) {
@@ -284,20 +279,15 @@ input:focus {
   .navMobile{
     display: none;
   }
-  
   .menuBtn{
     display: inline;
     width: 30px;
     float: right;
-    top: 0px;
-    
+    padding: 10px;
   }
   li {
     padding: 10px 20px 10px 20px;
   }
-  /* #navMenuLogo{
-    width: 50px;
-  } */
   .leftColumn {
     display: none;
   }
@@ -311,11 +301,5 @@ input:focus {
   } 
   #nibblesLogo {
     width: 40%;
-  }
-  body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
