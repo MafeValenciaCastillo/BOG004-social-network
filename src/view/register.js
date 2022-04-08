@@ -16,7 +16,7 @@ const createFormUser = () => {
     form.setAttribute('id', 'register-form');
     const message = document.createElement('p');
     message.setAttribute('id', 'message');
-    message.innerText = '';
+    message.innerContent = '';
 
     const contenedorEmail = document.createElement('div');
     const email = document.createElement('input');
@@ -29,7 +29,7 @@ const createFormUser = () => {
     email.setAttribute('autocomplete', 'off');
 
     const errorEmail = document.createElement('p');
-    errorEmail.innerText = 'Ingresa un email valido';
+    errorEmail.textContent = 'Ingresa un email valido';
     errorEmail.setAttribute('id', 'error-message-email');
     errorEmail.setAttribute('class', 'error-message-hidden');
 
@@ -58,7 +58,7 @@ const createFormUser = () => {
     submit.setAttribute('class', 'btn-submit');
 
     const errorPassword = document.createElement('p');
-    errorPassword.innerText = 'La contraseña no coincide';
+    errorPassword.textContent = 'La contraseña no coincide';
     errorPassword.setAttribute('id', 'error-message-password');
     errorPassword.setAttribute('class', 'error-message-hidden');
 
@@ -73,6 +73,7 @@ const createFormUser = () => {
     divElem.appendChild(form);
   };
   htmlFormRegister();
+
   const returnBtn = divElem.querySelector('.returnBtn');
   returnBtn.addEventListener('click', (event) => {
     changeView('#/');
@@ -142,7 +143,6 @@ const saveUser = () => {
     if (password.trim() !== '' && password === repeatPassword) {
       register(email, password);
     } else {
-      console.log('aaaaaaaaa')
       const errorMessage = document.getElementById('error-message-password');
       errorMessage.classList.remove('error-message-hidden'); // ocultar mensaje de error
     }
