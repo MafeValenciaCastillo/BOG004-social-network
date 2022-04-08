@@ -1,4 +1,5 @@
 /* eslint-disable no-alert */
+/* eslint-disable-next-line no-alert */
 import {
   saveRecipe,
   onGetRecipes,
