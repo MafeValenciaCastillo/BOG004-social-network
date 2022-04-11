@@ -5,7 +5,6 @@ import {
 // eslint-disable-next-line
 import { changeView } from '../view-controler/router.js';
 import { getAuth, onAuthStateChanged } from './firebase-utils.js';
-// LOGIN
 
 const showErrorAuth = (error) => {
   const errorCode = error.code;
@@ -30,7 +29,7 @@ const showErrorAuth = (error) => {
       break;
   }
 };
-
+// LOGIN
 export const login = (email, password) => {
   singIn(email, password)
     .then((userCredential) => {
@@ -46,7 +45,6 @@ export const login = (email, password) => {
 };
 
 // REGISTRO
-
 export const register = (email, password) => singUp(email, password)
   .then((userCredential) => {
     const user = userCredential.user;
