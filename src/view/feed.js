@@ -33,7 +33,7 @@ export default () => {
   const createRecipeForm = `
     <h2>¡Publica tus mejores recetas!</h2>
     <form class='formtext' id='task-form'>
-    <img id='bannerPostImg' src='https://raw.githubusercontent.com/MafeValenciaCastillo/BOG004-social-network/main/src/img/banner-recipeForm.jpg' alt='banner-recipeForm'>
+    <img id='bannerPostImg' src='./img/banner-recipeForm.jpg' alt='banner-recipeForm'>
       <div>
         <label for='title'>Título:</label>
         </br>
@@ -69,15 +69,15 @@ export default () => {
                   
                   <div class= 'containerIcons'>
                     <div class="containerIcon">
-                      <img id='${recipe.id}' class= 'icon-recipe likeRecipe' src='https://raw.githubusercontent.com/MafeValenciaCastillo/BOG004-social-network/main/src/img/like.png'  alt='like_image'>
+                      <img id='${recipe.id}' class= 'icon-recipe likeRecipe' src='./img/like.png'  alt='like_image'>
                       <p class='likeText'>${recipe.data().likes.length} Me gusta</p>  
                     </div>
                     <div class="containerIcon">
-                      <img id='${recipe.id}' class='icon-recipe deleteRecipe' src='https://raw.githubusercontent.com/MafeValenciaCastillo/BOG004-social-network/main/src/img/espatula.png' alt='espatula_image'>
+                      <img id='${recipe.id}' class='icon-recipe deleteRecipe' src='./img/espatula.png' alt='espatula_image'>
                       <p class='eliminarText'>Eliminar</p>
                     </div>
                     <div class="containerIcon">
-                      <img id='${recipe.id}' class='icon-recipe editRecipe' src='https://raw.githubusercontent.com/MafeValenciaCastillo/BOG004-social-network/main/src/img/rodillo.png' alt='rodillo_image'><p class='editarText'>Editar</p>
+                      <img id='${recipe.id}' class='icon-recipe editRecipe' src='./img/rodillo.png' alt='rodillo_image'><p class='editarText'>Editar</p>
                     </div>
                   </div>
                 </div>`;
@@ -90,12 +90,12 @@ export default () => {
           const btnLike = document.querySelectorAll('.likeRecipe');
           btnLike.forEach((btn) => {
             btn.addEventListener('click', async ({ target }) => {
-              const recipeToLike = await editeRecipe(target.dataset.id);
+              const recipeToLike = await editeRecipe(target.id);
               const likeUser = recipeToLike.data().likes;
               if (likeUser.includes(uid)) {
-                dislikeRecipe(uid, target.dataset.id);
+                dislikeRecipe(uid, target.id);
               } else {
-                likeRecipe(`${uid}`, `${target.dataset.id}`);
+                likeRecipe(`${uid}`, `${target.id}`);
               }
             });
           });
