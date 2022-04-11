@@ -27,101 +27,97 @@ acceso y loguearse con ella; crear, editar, borrar y _"likear"_ publicacciones.
 
 ### HTML
 
-- [ ] **Uso de HTML semántico**
-
-  <details><summary>Links</summary><p>
-
-  * [HTML semántico]
+- **Uso de HTML semántico**
 
 ### CSS
 
-- [ ] **Uso de selectores de CSS**
+- **Uso de selectores de CSS**
 
-- [ ] **Modelo de caja (box model): borde, margen, padding**
+- **Modelo de caja (box model): borde, margen, padding**
 
-- [ ] **Uso de flexbox en CSS**
+- **Uso de flexbox en CSS**
 
-- [ ] **Uso de CSS Grid Layout**
+- **Uso de CSS Grid Layout**
 
 ### Web APIs
 
-- [ ] **Uso de selectores del DOM**
+- **Uso de selectores del DOM**
 
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- **Manejo de eventos del DOM (listeners, propagación, delegación)**
 
-- [ ] **Manipulación dinámica del DOM**
+- **Manipulación dinámica del DOM**
 
-- [ ] **Ruteado (History API, evento hashchange, window.location)**
+- **Ruteado (History API, evento hashchange, window.location)**
 
 ### JavaScript
 
-- [ ] **Arrays (arreglos)**
+- **Arrays (arreglos)**
 
-- [ ] **Objetos (key, value)**
+- **Objetos (key, value)**
 
-- [ ] **Diferenciar entre tipos de datos primitivos y no primitivos**
+- **Diferenciar entre tipos de datos primitivos y no primitivos**
 
-- [ ] **Variables (declaración, asignación, ámbito)**
+- **Variables (declaración, asignación, ámbito)**
 
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
 
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
+- **Uso de bucles/ciclos (while, for, for..of)**
 
-- [ ] **Funciones (params, args, return)**
+- **Funciones (params, args, return)**
 
-- [ ] **Pruebas unitarias (unit tests)**
+- **Pruebas unitarias (unit tests)**
 
-- [ ] **Pruebas asíncronas**
+- **Pruebas asíncronas**
 
-- [ ] **Uso de mocks y espías**
+- **Uso de mocks y espías**
 
-- [ ] **Módulos de ECMAScript (ES Modules)**
+- ** Módulos de ECMAScript (ES Modules)**
 
-- [ ] **Uso de linter (ESLINT)**
+- **Uso de linter (ESLINT)**
 
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+- **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
 
-- [ ] **Diferenciar entre expresiones (expressions) y sentencias (statements)**
+- **Diferenciar entre expresiones (expressions) y sentencias (statements)**
 
-- [ ] **Callbacks**
+- **Callbacks**
 
-- [ ] **Promesas**
+- **Promesas**
 
 ### Control de Versiones (Git y GitHub)
 
-- [ ] **Git: Instalación y configuración**
+- **Git: Instalación y configuración**
 
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
+- **Git: Integración de cambios entre ramas (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
 
-- [ ] **GitHub: Despliegue con GitHub Pages**
+- **GitHub: Despliegue con GitHub Pages**
 
-- [ ] **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
+- **GitHub: Colaboración en Github (branches | forks | pull requests | code review | tags)**
 
-- [ ] **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
+- **GitHub: Organización en Github (projects | issues | labels | milestones | releases)**
 
 ### user-centricity
 
-- [ ] **Diseñar un producto o servicio poniendo a la usuaria en el centro**
+- **Diseñar un producto o servicio poniendo a la usuaria en el centro**
 
 ### product-design
 
-- [ ] **Crear prototipos de alta fidelidad que incluyan interacciones**
+- **Crear prototipos de alta fidelidad que incluyan interacciones**
 
-- [ ] **Seguir los principios básicos de diseño visual**
+- **Seguir los principios básicos de diseño visual**
 
 ### research
 
-- [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
+- **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
 
 ### Firebase
 
-- [ ] **Firebase Auth**
+- *Firebase Auth**
 
-- [ ] **Firestore**
+- **Firestore**
 
 ### 3. Definición del producto
 
