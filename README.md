@@ -9,8 +9,7 @@
 * [3. Definición del producto
 * [5. Historias de usuario
 * [6. Diseño de interfaz de usuario
-* [7. Entrega](#7-entrega)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+
 
 
 ## 1. Resumen del proyecto
