@@ -4,11 +4,11 @@
 
 ## Índice
 
-* [1. Resumen del proyecto]
-* [2. Objetivos de aprendizaje]
-* [3. Definición del producto
-* [5. Historias de usuario
-* [6. Diseño de interfaz de usuario
+* 1. Resumen del proyecto]
+* 2. Objetivos de aprendizaje]
+* 3. Definición del producto
+* 5. Historias de usuario
+* 6. Diseño de interfaz de usuario
 
 
 
