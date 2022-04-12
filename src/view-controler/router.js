@@ -2,7 +2,6 @@
 import { signOut, checkAuthStatus } from '../lib/auth.js';
 // eslint-disable-next-line import/no-cycle
 import { components } from '../view/index.js';
-// este import está pendiente para ser movido a otro archivo
 
 const changeView = async (hash) => {
   window.location.hash = hash;
