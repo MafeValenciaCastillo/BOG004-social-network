@@ -92,10 +92,7 @@ export const signOut = () => signOutUser();
 export const checkAuthStatus = () => new Promise((resolve, reject) => {
   try {
     const auth = getAuth();
-    console.log('auth', auth);
     onAuthStateChanged(auth, (user) => {
-      console.log('auth', auth);
-      console.log('user', user);
       resolve(user);
     });
   } catch (e) {
