@@ -41,7 +41,7 @@ export const login = (email, password) => {
         document.querySelector('#messageAlert').innerText = 'Su correo no ha sido verificado, por favor revise su email';
       }
     }).catch((error) => {
-      showErrorAuth(error);
+      // showErrorAuth(error);
     });
 };
 
