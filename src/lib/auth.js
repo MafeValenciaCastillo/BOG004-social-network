@@ -37,6 +37,7 @@ export const login = (email, password) => {
       if (user.emailVerified) {
         changeView('#/feed');
       } else {
+        document.getElementById('message').innerText = '';
         document.querySelector('#messageAlert').innerText = 'Su correo no ha sido verificado, por favor revise su email';
       }
     }).catch((error) => {
@@ -49,6 +50,7 @@ export const register = (email, password) => singUp(email, password)
   .then((userCredential) => {
     const user = userCredential.user;
     emailSingUp(user).then(() => {
+      signOutUser();
       document.querySelector('#message').innerText = `Se ha enviado un mensaje al correo: ${user.email} para verificar la creación de la cuenta`;
       setTimeout(() => { window.location.href = 'http://localhost:3000/#/login'; }, 5000);
     }).catch((error) => {
@@ -90,7 +92,10 @@ export const signOut = () => signOutUser();
 export const checkAuthStatus = () => new Promise((resolve, reject) => {
   try {
     const auth = getAuth();
+    console.log('auth', auth);
     onAuthStateChanged(auth, (user) => {
+      console.log('auth', auth);
+      console.log('user', user);
       resolve(user);
     });
   } catch (e) {
