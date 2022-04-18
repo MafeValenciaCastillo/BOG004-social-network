@@ -37,11 +37,10 @@ export const login = (email, password) => {
       if (user.emailVerified) {
         changeView('#/feed');
       } else {
-        document.getElementById('message').innerText = '';
         document.querySelector('#messageAlert').innerText = 'Su correo no ha sido verificado, por favor revise su email';
       }
     }).catch((error) => {
-      // showErrorAuth(error);
+      showErrorAuth(error);
     });
 };
 

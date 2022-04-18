@@ -5,19 +5,15 @@ describe('createFormUser', () => {
   beforeEach(() => {
     document.body.innerHTML = '<div id="sectionGrid"><section id="container"></section></div>';
   });
-  it('email no es correcto', () => {
+  it('Mensaje muestra "email inválido"', () => {
     const result = createFormUser();
     const errorEmail = result.querySelector('#error-message-email');
     expect(errorEmail.textContent).toBe('Ingresa un email valido');
     expect(errorEmail.classList).toContain('error-message-hidden');
   });
-  it('password no es correcto', () => {
+  it('Mensaje muestra "La contraseña no coincide"', () => {
     const result = createFormUser();
-    const password = result.querySelector('#register-password');
-    const repeatPassword = result.querySelector('#register-repeat-password');
     const errorPassword = result.querySelector('#error-message-password');
-    password.value = '123';
-    repeatPassword.value = '1234';
     expect(errorPassword.textContent).toBe('La contraseña no coincide');
   });
 });
