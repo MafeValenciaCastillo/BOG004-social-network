@@ -32,19 +32,19 @@ export default () => {
 
   const createRecipeForm = `
     <h2>¡Publica tus mejores recetas!</h2>
-    <form class='formtext' id='task-form'>
+    <form class='formtext' id='task-form' >
     <img id='bannerPostImg' src='./img/banner-recipeForm.jpg' alt='banner-recipeForm'>
       <div>
         <label for='title'>Título:</label>
         </br>
-        <input type='text' id='task-title'>
+        <input type='text' id='task-title' required>
       </div>
       <div>
         <label for='description'>Descripción:</label>
         </br>
-        <textarea id='task-description' rows="3" placeholder="Escribe tu receta"></textarea>
+        <textarea id='task-description' rows="3" placeholder="Escribe tu receta" required></textarea>
       </div>
-      <button id="btn-task-save">Publicar</button>
+      <button type='submit' id="btn-task-save">Publicar</button>
     </form>
   `;
 

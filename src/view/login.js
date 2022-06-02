@@ -12,7 +12,7 @@ export default () => {
       <h2 class='text.center'> ¡Hola! </h2>
       <form class='formLogin' id="login-form">
         <input type='text' id='loginEmail' class='inputForm' placeholder='e-mail' required input/>
-        <input type='password' id='loginPassword' class='inputForm' placeholder='Contraseña' required></input>
+        <input type='password' id='loginPassword' class='inputForm' placeholder='Password' required></input>
         <p id='messageAlert'></p>
         <button type='submit' id='btnLogin'>Iniciar sesión</button>
       </form>
@@ -24,6 +24,11 @@ export default () => {
   const divLogin = document.createElement('div');
   divLogin.setAttribute('id', 'login');
   divLogin.innerHTML = viewLogin;
+
+  const returnBtn = divLogin.querySelector('.returnBtn');
+  returnBtn.addEventListener('click', () => {
+    changeView('#/');
+  });
 
   divLogin.querySelector('#login-form').addEventListener('submit', (e) => {
     e.preventDefault(); // previene la recarga por defecto de la página
@@ -40,10 +45,6 @@ export default () => {
     } else {
       // console.log('error al iniciar sesión');
     }
-  });
-  const returnBtn = divLogin.querySelector('.returnBtn');
-  returnBtn.addEventListener('click', () => {
-    changeView('#/');
   });
 
   return divLogin;
