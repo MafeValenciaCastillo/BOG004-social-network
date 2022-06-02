@@ -25,11 +25,6 @@ export default () => {
   divLogin.setAttribute('id', 'login');
   divLogin.innerHTML = viewLogin;
 
-  const returnBtn = divLogin.querySelector('.returnBtn');
-  returnBtn.addEventListener('click', () => {
-    changeView('#/');
-  });
-
   divLogin.querySelector('#login-form').addEventListener('submit', (e) => {
     e.preventDefault(); // previene la recarga por defecto de la página
     const email = divLogin.querySelector('#loginEmail').value;
@@ -45,6 +40,10 @@ export default () => {
     } else {
       // console.log('error al iniciar sesión');
     }
+  });
+  const returnBtn = divLogin.querySelector('.returnBtn');
+  returnBtn.addEventListener('click', () => {
+    changeView('#/');
   });
 
   return divLogin;
